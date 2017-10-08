@@ -1,0 +1,11 @@
+language: rust
+sudo: false
+
+rust:
+  - stable
+  - beta
+
+script:
+  - rustc --version
+  - cargo build
+  - cargo test --all
